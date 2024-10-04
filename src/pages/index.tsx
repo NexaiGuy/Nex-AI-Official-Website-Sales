@@ -63,8 +63,8 @@ const IndexPage = () => {
             </LogoWrap>
             <Title className="animate__animated animate__lightSpeedInRight illustration">
               <br /> <br />
-              <HoverableWord></HoverableWord>
-              <HoverableWord>Automate Your Content Workflow</HoverableWord>
+              
+              <HoverableWord>Automate Your Content Workflow.</HoverableWord>
             </Title>
             <PurchaseButton />
             <SmallText>
@@ -229,9 +229,10 @@ const LogoWrap = styled.div`
 
 const Title = styled.h1`
   max-width: 500px;
-  font-size: 40px;
+  font-size: 27px;
+  font-weight: 400;
   line-height: 72px;
-  margin-top: -110px;
+  margin-top: -38px;
   color: #ffffff;
   mix-blend-mode: normal;
   text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -239,7 +240,7 @@ const Title = styled.h1`
   text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 50px;
     text-align: center;
   }
@@ -252,20 +253,28 @@ const Title = styled.h1`
 
 const HoverableWord = styled.span`
   display: inline-block;
+  padding: 0 4px;
   transition: transform 0.5s ease;
   background: rgba(183, 36, 229, 0.1);
-  box-shadow: 0px 16px 32px rgba(183, 36, 229, 0.2), 
-              0px 0px 8px 2px rgba(180, 35, 227, 0.5);
-  border-right: 2px solid #B724E5;
-  border-left: 1px solid #24B7A5;
 
+  border-radius: 7px; 
+
+  border-right: 5px solid #A922CB;
+  border-top: 1px solid #A922CB;
+  border-left: 1px solid #24B7A5;
+  border-bottom: 5px solid #24B7A5;
+
+  box-shadow: 
+    0px 16px 23px rgba(36, 183, 165, 0.3), 
+    0px 0px 24px 2px rgba(180, 35, 227, 0.7), 
+    5px 5px 12px rgba(169, 34, 203, 0.1),
+    -5px -5px 10px rgba(36, 183, 165, 0.4),
+    0px 0px 105px 45px rgba(251, 255, 138, 0.03);
   &:hover {
     transform: translateY(-10px);
   }
-
-  box-shadow: 0px 0px 105px 45px rgba(251, 255, 138, 0.03);
-  border-radius: 7px;
 `;
+
 
 const SmallText = styled.p`
   max-width: 285px;

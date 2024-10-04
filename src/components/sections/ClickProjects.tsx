@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1200px;
-  margin: 140px auto;
+  margin: 160px auto;
   margin-bottom: 70px;
   text-align: center;
   gap: 20px;
@@ -44,13 +44,13 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 700; /* Adjusted weight for emphasis */
-  line-height: 130%;
+  line-height: 150%;
   text-transform: uppercase;
   color: #24B7A5; /* New contrasting color with different hue (blue-green) */
   margin: 0 auto;
   margin-bottom: 20px;
   border-bottom: 2px solid #B724E5;
-  padding-bottom: 10px;
+  padding: 0 40px 0 40px;
   background: rgba(36, 183, 165, 0.1); /* Light background for title */
   border-radius: 10px;
   transition: transform 0.6s ease;

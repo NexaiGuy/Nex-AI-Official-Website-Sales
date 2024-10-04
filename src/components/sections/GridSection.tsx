@@ -52,7 +52,7 @@ const Title = styled.h1`
   margin: 0 auto;
   margin-bottom: 20px;
   border-bottom: 2px solid #B724E5;
-  padding-bottom: 10px;
+  padding: 0 40px 0 40px;
   background: rgba(36, 183, 165, 0.1); /* Light background for title */
   border-radius: 10px;
   transition: transform 0.6s ease;

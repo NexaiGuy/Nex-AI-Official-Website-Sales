@@ -631,10 +631,10 @@ const LogoWrap = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.
 })(["display:flex;margin-left:-28px;@media (max-width:1920px){margin-left:0;margin-top:0;}@media (max-width:768px){margin-left:0;margin-top:50px;}@media (max-width:480px){margin-top:30px;}"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].h1.withConfig({
   displayName: "pages__Title"
-})(["max-width:500px;font-size:40px;line-height:72px;margin-top:-40px;color:#ffffff;mix-blend-mode:normal;text-shadow:0px 20px 40px rgba(0,0,0,0.1);animation-duration:1.4s;text-align:center;@media (max-width:768px){font-size:40px;line-height:50px;text-align:center;}@media (max-width:480px){font-size:32px;line-height:40px;}"]);
+})(["max-width:500px;font-size:30px;line-height:72px;margin-top:-110px;color:#ffffff;mix-blend-mode:normal;text-shadow:0px 20px 40px rgba(0,0,0,0.1);animation-duration:1.4s;text-align:center;@media (max-width:768px){font-size:40px;line-height:50px;text-align:center;}@media (max-width:480px){font-size:32px;line-height:40px;}"]);
 const HoverableWord = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].span.withConfig({
   displayName: "pages__HoverableWord"
-})(["display:inline-block;transition:transform 0.5s ease;text-align:center;padding:10px 15px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;background:rgba(183,36,229,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:translateY(-10px);}"]);
+})(["display:inline-block;transition:transform 0.5s ease;background:rgba(183,36,229,0.1);box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);border-right:2px solid #B724E5;border-left:1px solid #24B7A5;&:hover{transform:translateY(-10px);}box-shadow:0px 0px 105px 45px rgba(251,255,138,0.03);border-radius:7px;"]);
 const SmallText = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p.withConfig({
   displayName: "pages__SmallText"
 })(["max-width:285px;font-size:13px;line-height:200%;color:#9EE0EC;animation:HeroAnimation 3s ease;@media (max-width:768px){text-align:center;}@media (max-width:480px){font-size:11px;}"]);

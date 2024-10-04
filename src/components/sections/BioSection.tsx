@@ -79,7 +79,7 @@ const TeamTitle = styled.h2`
   color: #24B7A5; /* Same color as the Title for consistency */
   margin-bottom: 20px;
   border-bottom: 2px solid #B724E5;
-  padding-bottom: 10px;
+  padding: 0 40px 0 40px;
   background: rgba(36, 183, 165, 0.1); /* Light background for subtitle */
   border-radius: 10px;
   box-shadow: 0px 0px 8px 2px rgba(180, 35, 227, 0.5); /* Blurry border for the Team title */
