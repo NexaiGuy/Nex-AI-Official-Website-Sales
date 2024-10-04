@@ -18,7 +18,7 @@ function PurchaseButton() {
         <Icon src={Credit} alt="Credit Icon" />
       </IconWrapper>
       <TextWrapper>
-        <Title>"How Nex AI Works"</Title>
+        <Title>"Who are we"</Title>
         
           <Subtitle>Scroll Down</Subtitle>
         
