@@ -68,7 +68,7 @@ function PurchaseButton() {
     });
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    href: "#click-projects"
+    href: "#LearnHow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, {
     onClick: handleClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IconWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Ring, {
@@ -77,7 +77,7 @@ function PurchaseButton() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Icon, {
     src: _src_images_icons_check_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
     alt: "Credit Icon"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "\"Learn How\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Subtitle, null, "Scroll Down"))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "\"How Nex AI Works\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Subtitle, null, "Scroll Down"))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PurchaseButton);
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
@@ -97,7 +97,7 @@ const Icon = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withC
 })(["width:29px;height:29px;"]);
 const Ring = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "PurchaseButton__Ring"
-})(["position:absolute;top:-15px;left:-16px;transition:transform 0.3s ease;", ":hover &{transform:rotate(30deg) scale(1.1) translate(1px,1px);}"], Wrapper);
+})(["position:absolute;top:-15px;left:-16.01px;transition:transform 0.3s ease;filter:hue-rotate(240deg) brightness(1.2) saturate(1.5);", ":hover &{transform:rotate(30deg) scale(1.1) translate(1px,1px);}"], Wrapper);
 const IconWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "PurchaseButton__IconWrapper"
 })(["width:45px;height:45px;background:linear-gradient(200.44deg,#4316db 4.57%,#3EB0F3 98.38%);border-radius:50%;display:grid;justify-content:center;align-content:center;justify-self:center;position:relative;transition:filter 0.3s ease;", ":hover &{filter:brightness(120%) saturate(120%);}"], Wrapper);
@@ -171,32 +171,32 @@ __webpack_require__.r(__webpack_exports__);
 const menuData = [{
   title: "How It Works",
   icon: _src_images_icons_courses_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
-  link: "#Skills"
+  link: "#HowItWorks"
 }, {
   title: "Your Control",
   icon: _src_images_icons_tutorials_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
-  link: "#Projects"
+  link: "#YourControl"
 }, {
-  title: "Bio",
+  title: "About",
   icon: _src_images_icons_certificates_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
-  link: "#Bio"
+  link: "#About"
 }, {
   title: "",
   icon: _src_images_icons_hamburger_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
   link: "/account"
 }];
 const tooltipData = [{
-  title: "Skills",
+  title: "How It Works",
   icon: _src_images_icons_profile_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
-  link: "#Skills"
+  link: "#HowItWorks"
 }, {
-  title: "Projects",
+  title: "Your Control",
   icon: _src_images_icons_settings_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
-  link: "#Projects"
+  link: "#YourControl"
 }, {
   title: "About",
   icon: _src_images_icons_signout_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
-  link: "#Bio"
+  link: "#About"
 }];
 
 /***/ }),
@@ -315,7 +315,7 @@ function CompanyOverview() {
 }
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "BioSection__Wrapper"
-})(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:20px auto;text-align:center;gap:20px;padding:50px 20px;font-family:\"Orbitron\",sans-serif;background:rgba(63,178,244,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(63,176,244,0.2);"]);
+})(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:153px auto;text-align:center;gap:20px;padding:50px 20px;font-family:\"Orbitron\",sans-serif;background:rgba(63,178,244,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(63,176,244,0.2);"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "BioSection__Title"
 })(["font-style:normal;font-size:2.5rem;font-weight:bold;line-height:130%;text-transform:uppercase;color:#3FB2F4;margin-bottom:20px;border-bottom:2px solid #3FB2F4;padding-bottom:10px;background:rgba(63,178,244,0.1);border-radius:10px;transition:transform 0.6s ease;&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
@@ -578,23 +578,43 @@ const IndexPage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_cards_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoWrap, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoCon, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoCon2, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Title, {
     className: "animate__animated animate__lightSpeedInRight illustration"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverableWord, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverableWord, null, "Automate Your Content Workflow")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_buttons_PurchaseButton__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SmallText, null, "\u201CFrom content creation to publication, Nex AI connects your company\u2019s data with the power of artificial intelligence for a seamless, automated process.\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "click-projects"
+    id: "LearnHow"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ContentWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_ClickProjects__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "Skills"
+    id: "HowItWorks"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Divider, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_GridSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "Projects"
+    id: "YourControl"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Divider2, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_GridProjects__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "Bio"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Divider3, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_BioSection__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
+    id: "About"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Divider3, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_BioSection__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(FooterContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SocialLinks, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://x.com/Nex_AI_Official",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "Twitter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://www.linkedin.com/in/kev-b-4aaa39315/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "LinkedIn"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://github.com/NexaiGuy",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, "GitHub")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Copyright, null, "\xA9 ", new Date().getFullYear(), " Nex AI. All rights reserved."))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
-
-// Styled components remain unchanged as before
-
-// Styled components
+const Footer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].footer.withConfig({
+  displayName: "pages__Footer"
+})(["background-color:#0C0D31;padding:40px 20px;text-align:center;color:#fff;margin-top:270px;"]);
+const FooterContent = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "pages__FooterContent"
+})(["display:flex;flex-direction:column;align-items:center;gap:20px;"]);
+const SocialLinks = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "pages__SocialLinks"
+})(["display:flex;gap:20px;a{color:#3FB2F4;text-decoration:none;font-size:1.1rem;transition:color 0.3s ease;&:hover{color:#76d1f9;}}"]);
+const Copyright = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p.withConfig({
+  displayName: "pages__Copyright"
+})(["font-size:0.9rem;color:rgba(255,255,255,0.6);margin-top:20px;"]);
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__Wrapper"
-})(["background:linear-gradient(180.44deg,#0C0D31 25.57%,#000000);font-family:\"Orbitron\",sans-serif;font-optical-sizing:auto;height:10000px;@keyframes HeroAnimation{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0px);}}"]);
+})(["background:linear-gradient(180.44deg,#0C0D31 25.57%,#000000);font-family:\"Orbitron\",sans-serif;font-optical-sizing:auto;height:7000px;@keyframes HeroAnimation{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0px);}}"]);
 const ContainerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__ContainerWrapper"
 })(["margin-top:90px;"]);
@@ -604,24 +624,9 @@ const ContentWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"
 const TextWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__TextWrapper"
 })(["position:relative;display:grid;gap:20px;margin-top:-142px;margin-left:20px;@media (max-width:768px){justify-items:center;text-align:center;margin-left:0;margin-top:36px;}"]);
-const AuthorWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
-  displayName: "pages__AuthorWrapper"
-})(["display:flex;align-items:center;gap:16px;"]);
 const HeroWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__HeroWrapper"
 })(["display:grid;max-width:1234px;grid-template-columns:360px auto;gap:60px;padding:200px 20px 0px;justify-content:center;margin:0 auto;margin-bottom:60px;.courseCard{margin-top:74px;}@media (max-width:780px){grid-template-columns:1fr;justify-items:center;padding-top:150px;}"]);
-const Logo = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].img.withConfig({
-  displayName: "pages__Logo"
-})(["width:84px;height:84px;margin-right:18px;margin-top:17px;@media (max-width:768px){width:64px;height:64px;}@media (max-width:480px){width:50px;height:50px;}"]);
-const LogoCon = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
-  displayName: "pages__LogoCon"
-})(["transition:transform 0.6s ease;transform-style:preserve-3d;&:hover{transform:translateY(-20px);}"]);
-const Logo2 = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].img.withConfig({
-  displayName: "pages__Logo2"
-})(["width:120px;height:120px;@media (max-width:768px){width:93px;height:93px;margin-top:3px;}@media (max-width:480px){width:70px;height:70px;margin-top:8px;}"]);
-const LogoCon2 = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
-  displayName: "pages__LogoCon2"
-})(["transition:transform 0.6s ease;transform-style:preserve-3d;&:hover{transform:translateY(-20px);}"]);
 const LogoWrap = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__LogoWrap"
 })(["display:flex;margin-left:-28px;@media (max-width:1920px){margin-left:0;margin-top:0;}@media (max-width:768px){margin-left:0;margin-top:50px;}@media (max-width:480px){margin-top:30px;}.animate__fadeInDownBig{animation-duration:1.3s;}"]);
@@ -642,7 +647,13 @@ const Divider2 = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.
 })(["width:300px;height:0.5px;background:rgba(255,255,255,0.3);margin:70px auto 32px;margin-bottom:93px;@media (max-width:768px){margin:60px auto 20px;}@media (max-width:480px){margin:60px auto 16px;}"]);
 const Divider3 = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "pages__Divider3"
-})(["width:300px;height:0.5px;background:rgba(255,255,255,0.3);margin:87px auto 32px;@media (max-width:768px){margin:60px auto 20px;}@media (max-width:480px){margin:40px auto 16px;}"]);
+})(["width:300px;height:0.5px;background:rgba(255,255,255,0.3);margin:88px auto 32px;@media (max-width:768px){margin:60px auto 20px;}@media (max-width:480px){margin:40px auto 16px;}"]);
+const LogoCon = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "pages__LogoCon"
+})(["transition:transform 0.6s ease;transform-style:preserve-3d;&:hover{transform:translateY(-20px);}"]);
+const LogoCon2 = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "pages__LogoCon2"
+})(["transition:transform 0.6s ease;transform-style:preserve-3d;&:hover{transform:translateY(-20px);}"]);
 
 /***/ }),
 

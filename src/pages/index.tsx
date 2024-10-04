@@ -17,7 +17,6 @@ const IndexPage = () => {
   const { width } = useWindowSize();
 
   useEffect(() => {
-    // Replace the old Vanta and Three.js script with the new p5.js and Topology script
     const scriptP5 = document.createElement("script");
     scriptP5.src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js";
     scriptP5.async = true;
@@ -113,11 +112,18 @@ const IndexPage = () => {
 export default IndexPage;
 
 const Footer = styled.footer`
-  background-color: #0C0D31;
+  background: rgba(183, 36, 229, 0.1);
   padding: 40px 20px;
   text-align: center;
   color: #fff;
   margin-top: 270px;
+  border-top: 2px solid #B724E5; 
+  border-bottom: 2px solid #B724E5; 
+  box-shadow: 0px -8px 16px rgba(183, 36, 229, 0.2), 0px 8px 16px rgba(183, 36, 229, 0.2);
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 `;
 
 const FooterContent = styled.div`
@@ -132,13 +138,13 @@ const SocialLinks = styled.div`
   gap: 20px;
 
   a {
-    color: #3FB2F4;
+    color: #24B7A5; 
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #76d1f9;
+      color: #76d1f9; 
     }
   }
 `;
@@ -151,20 +157,11 @@ const Copyright = styled.p`
 
 const Wrapper = styled.div`
   background: linear-gradient(180.44deg, #0C0D31 25.57%, #000000);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   height: 7000px;
-
-  @keyframes HeroAnimation {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
 `;
 
 const ContainerWrapper = styled.div`
@@ -228,10 +225,6 @@ const LogoWrap = styled.div`
   @media (max-width: 480px) {
     margin-top: 30px;
   }
-
-  .animate__fadeInDownBig {
-    animation-duration: 1.3s;
-  }
 `;
 
 const Title = styled.h1`
@@ -272,7 +265,6 @@ const HoverableWord = styled.span`
 const SmallText = styled.p`
   max-width: 285px;
   font-size: 13px;
-  font-family: "SUSE", sans-serif;
   line-height: 200%;
   color: #9EE0EC;
   animation: HeroAnimation 3s ease;

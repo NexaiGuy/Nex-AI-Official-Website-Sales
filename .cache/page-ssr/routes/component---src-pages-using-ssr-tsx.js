@@ -69,32 +69,32 @@ __webpack_require__.r(__webpack_exports__);
 const menuData = [{
   title: "How It Works",
   icon: _src_images_icons_courses_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
-  link: "#Skills"
+  link: "#HowItWorks"
 }, {
   title: "Your Control",
   icon: _src_images_icons_tutorials_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
-  link: "#Projects"
+  link: "#YourControl"
 }, {
-  title: "Bio",
+  title: "About",
   icon: _src_images_icons_certificates_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
-  link: "#Bio"
+  link: "#About"
 }, {
   title: "",
   icon: _src_images_icons_hamburger_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
   link: "/account"
 }];
 const tooltipData = [{
-  title: "Skills",
+  title: "How It Works",
   icon: _src_images_icons_profile_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
-  link: "#Skills"
+  link: "#HowItWorks"
 }, {
-  title: "Projects",
+  title: "Your Control",
   icon: _src_images_icons_settings_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
-  link: "#Projects"
+  link: "#YourControl"
 }, {
   title: "About",
   icon: _src_images_icons_signout_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
-  link: "#Bio"
+  link: "#About"
 }];
 
 /***/ }),
