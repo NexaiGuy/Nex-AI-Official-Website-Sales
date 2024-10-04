@@ -231,7 +231,7 @@ const Title = styled.h1`
   max-width: 500px;
   font-size: 40px;
   line-height: 72px;
-  margin-top: -40px;
+  margin-top: -110px;
   color: #ffffff;
   mix-blend-mode: normal;
   text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -253,6 +253,11 @@ const Title = styled.h1`
 const HoverableWord = styled.span`
   display: inline-block;
   transition: transform 0.5s ease;
+  background: rgba(183, 36, 229, 0.1);
+  box-shadow: 0px 16px 32px rgba(183, 36, 229, 0.2), 
+              0px 0px 8px 2px rgba(180, 35, 227, 0.5);
+  border-right: 2px solid #B724E5;
+  border-left: 1px solid #24B7A5;
 
   &:hover {
     transform: translateY(-10px);
