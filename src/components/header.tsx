@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import styled from "styled-components";
-import { menuData } from "./data/menuData"; // Ensure this is the correct path
+import { menuData } from "./data/menuData";
 import MenuButton from "./buttons/MenuButton";
 import MenuTooltip from "./tooltip/MenuTooltip";
 

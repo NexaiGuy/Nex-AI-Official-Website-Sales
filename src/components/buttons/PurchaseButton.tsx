@@ -6,7 +6,7 @@ import IconRing from "/src/images/icons/icon-ring.svg";
 function PurchaseButton() {
   const handleClick = () => {
     const clickProjects = document.getElementById('click-projects');
-    clickProjects.scrollIntoView({ behavior: 'smooth' });
+    clickProjects?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

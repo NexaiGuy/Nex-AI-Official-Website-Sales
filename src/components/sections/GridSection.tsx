@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import NotionTemplate from "/src/images/illustrations/NotionTemplate.png";
+
 function ContentStep() {
   return (
     <Wrapper id="ContentUpload">
@@ -16,7 +18,7 @@ function ContentStep() {
         <li>Multi-user access and permissions for team collaboration.</li>
       </FeaturesList>
       <Visual>
-        <img src="/path/to/mockup.png" alt="Content Management Interface" />
+        <Image src={NotionTemplate} alt="Content Management Interface" style={{ width: '600px', height: '360px' }} />
       </Visual>
     </Wrapper>
   );
@@ -61,6 +63,19 @@ const Title = styled.h1`
   &:hover {
     transform: rotateY(360deg); /* Rotate on hover */
     transition: transform 0.5s ease-in-out;
+  }
+`;
+
+const Image = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 2s; // Specifies that the transform change should take 2 seconds
+
+  &:hover {
+    transform: scale(1.26); // Increase the size of the image by 10% on hover
   }
 `;
 

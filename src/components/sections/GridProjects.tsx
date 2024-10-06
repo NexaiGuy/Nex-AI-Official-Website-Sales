@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import BufferManage from "/src/images/illustrations/BufferManage.png";
+
 function FinalControlSection() {
   return (
     <Wrapper>
@@ -20,7 +22,7 @@ function FinalControlSection() {
         you have the chance to review every post, ensuring they meet your standards and vision.
       </Example>
       <Visual>
-        <img src="/path/to/final-approval-mockup.png" alt="Final Approval Interface" />
+        <Image src={BufferManage} alt="Final Approval Interface" style={{ width: '600px', height: '360px' }} />
       </Visual>
     </Wrapper>
   );
@@ -42,29 +44,43 @@ const Wrapper = styled.div`
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: rgba(183, 36, 229, 0.1); /* Lightened background */
+  background: rgba(183, 36, 229, 0.1);
   border-radius: 20px;
-  box-shadow: 0px 16px 32px rgba(183, 36, 229, 0.2), 0px 0px 8px 2px rgba(180, 35, 227, 0.5); /* Added blurry border */
+  box-shadow: 0px 16px 32px rgba(183, 36, 229, 0.2), 0px 0px 8px 2px rgba(180, 35, 227, 0.5);
 `;
 
 const Title = styled.h1`
   font-size: 2.5rem;
-  font-weight: 700; /* Adjusted weight for emphasis */
+  font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
-  color: #24B7A5; /* New contrasting color with different hue (blue-green) */
+  color: #24B7A5;
   margin: 0 auto;
   margin-bottom: 20px;
   border-bottom: 2px solid #B724E5;
   padding: 0 40px 0 40px;
-  background: rgba(36, 183, 165, 0.1); /* Light background for title */
+  background: rgba(36, 183, 165, 0.1);
   border-radius: 10px;
   transition: transform 0.6s ease;
-  box-shadow: 0px 0px 8px 2px rgba(180, 35, 227, 0.5); /* Blurry border for the title */
+  box-shadow: 0px 0px 8px 2px rgba(180, 35, 227, 0.5);
 
   &:hover {
-    transform: rotateY(360deg); /* Rotate on hover */
+    transform: rotateY(360deg);
     transition: transform 0.5s ease-in-out;
+  }
+`;
+
+const Image = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 16px 32px rgba(183, 36, 229, 0.2), 0px 0px 8px 2px rgba(180, 35, 227, 0.5);
+  transition: transform 2s;
+
+  &:hover {
+    transform: scale(1.26);
   }
 `;
 

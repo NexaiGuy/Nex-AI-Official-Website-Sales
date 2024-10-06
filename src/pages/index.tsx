@@ -14,8 +14,6 @@ import PurchaseButton from "../components/buttons/PurchaseButton";
 import { useEffect } from "react";
 
 const IndexPage = () => {
-  const { width } = useWindowSize();
-
   useEffect(() => {
     const scriptP5 = document.createElement("script");
     scriptP5.src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js";
