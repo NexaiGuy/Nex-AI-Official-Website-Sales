@@ -251,10 +251,11 @@ const Title = styled.h1`
 
 const HoverableWord = styled.span`
   display: inline-block;
-  padding: 0 4px;
+  padding: 0 30px;
   transition: transform 0.5s ease;
   background: rgba(183, 36, 229, 0.1);
-
+  font-size: 21px;
+  text-transform: uppercase;
   border-radius: 7px; 
 
   border-right: 5px solid #A922CB;
