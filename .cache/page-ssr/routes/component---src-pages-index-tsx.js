@@ -77,7 +77,7 @@ function PurchaseButton() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Icon, {
     src: _src_images_icons_check_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
     alt: "Credit Icon"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "\"How Nex AI Works\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Subtitle, null, "Scroll Down"))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, null, "\"Who are we\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Subtitle, null, "Scroll Down"))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PurchaseButton);
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
@@ -223,7 +223,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // Import the updated menuData
+ // Ensure this is the correct path
 
 
 
@@ -257,9 +257,9 @@ function Header() {
     src: _src_images_icons_logo3_png__WEBPACK_IMPORTED_MODULE_5__["default"],
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(MenuWrapper, {
-    count: _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.length,
+    $count: _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.length,
     ref: ref
-  }, _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.map((item, index) => item.link === "/account" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, " ", _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.map((item, index) => item.link === "/account" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
     item: item,
     key: index,
     onClick: event => handleClick(event)
@@ -284,7 +284,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.wi
 })(["position:sticky;top:20px;display:grid;grid-template-columns:44px auto;width:100%;justify-content:space-between;padding-left:19.4%;padding-right:19.22%;align-items:center;z-index:1000;@media (max-width:768px){top:30px;}@media (max-width:450px){top:20px;padding:0 20px;}"]);
 const MenuWrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "header__MenuWrapper"
-})(["display:grid;gap:30px;grid-template-columns:repeat(", ",auto);a{transition:transform 0.3s ease-in-out;}a:hover{transform:translateY(-10px);}@media (max-width:768px){> a{display:none;}grid-template-columns:auto;}"], props => props.count);
+})(["display:grid;gap:30px;grid-template-columns:repeat(", ",auto);a{transition:transform 0.3s ease-in-out;}a:hover{transform:translateY(-10px);}@media (max-width:768px){> a{display:none;}grid-template-columns:auto;}"], props => props.$count);
 const HamburgerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "header__HamburgerWrapper"
 })(["display:none;@media (max-width:768px){display:block;}"]);
@@ -324,7 +324,7 @@ const BodyText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.wit
 })(["max-width:800px;font-size:1.2rem;line-height:1.6;color:#fff;margin:0 auto;padding:0 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;"]);
 const TeamTitle = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.withConfig({
   displayName: "BioSection__TeamTitle"
-})(["font-size:2rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin-bottom:20px;border-bottom:2px solid #B724E5;padding-bottom:10px;background:rgba(36,183,165,0.1);border-radius:10px;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);"]);
+})(["font-size:2rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin-bottom:20px;border-bottom:2px solid #B724E5;padding:0 40px 0 40px;background:rgba(36,183,165,0.1);border-radius:10px;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);"]);
 const TeamBodyText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
   displayName: "BioSection__TeamBodyText"
 })(["max-width:800px;font-size:1.1rem;line-height:1.6;color:#fff;margin:0 auto;padding:0 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;"]);
@@ -351,19 +351,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function OverviewNexAI() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Title, null, "What is Nex AI?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(BodyText, null, "Nex AI is an automation solution designed to simplify your content management and publishing process. We build a custom system that allows companies to upload and manage their content just like in \u2018Notion,\u2019 and integrate it with powerful AI tools like ChatGPT, Perplexity.ai, and platforms like Make.com to automate and optimize content across various channels."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(FeaturesList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Upload and organize content with ease."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Automate content workflows with AI-driven tools."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Gain full control over the content before it is published."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Save time, effort, and resources by integrating everything in one place.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(CTAButton, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Wrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Title, null, "What is Nex AI?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(BodyText, null, "Nex AI is an automation solution designed to simplify your content management and publishing process. We build a custom system that allows companies to upload and manage their content just like in \u2018Notion,\u2019 and integrate it with powerful AI tools like ChatGPT, Perplexity.ai, and platforms like Make.com to automate and optimize content across various channels."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Image, {
+    src: "/path/to/your/image.jpg",
+    alt: "Nex AI Overview Image"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(FeaturesList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Upload and organize content with ease."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Automate content workflows with AI-driven tools."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Gain full control over the content before it is published."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Save time, effort, and resources by integrating everything in one place.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(CTAButton, {
     href: "#HowItWorks"
   }, "See How It Works"));
 }
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ClickProjects__Wrapper"
-})(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:140px auto;margin-bottom:70px;text-align:center;gap:20px;padding:50px 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;background:rgba(183,36,229,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);"]);
+})(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:160px auto;margin-bottom:70px;text-align:center;gap:20px;padding:50px 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;background:rgba(183,36,229,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "ClickProjects__Title"
-})(["font-size:2.5rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding-bottom:10px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
+})(["font-size:2.5rem;font-weight:700;line-height:150%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding:0 40px 0 40px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
 const BodyText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
   displayName: "ClickProjects__BodyText"
 })(["max-width:800px;font-size:1.2rem;line-height:1.6;color:#fff;margin:0 auto;padding:0 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;"]);
+
+/* Styled Image component */
+const Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
+  displayName: "ClickProjects__Image"
+})(["max-width:100%;height:auto;margin:20px auto;border-radius:15px;box-shadow:0px 8px 16px rgba(0,0,0,0.2);"]);
 const FeaturesList = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConfig({
   displayName: "ClickProjects__FeaturesList"
 })(["list-style-type:none;padding:0;margin-bottom:40px;li{font-size:1.1rem;color:#fff;margin:10px 0;text-align:center;}"]);
@@ -401,7 +409,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 })(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:0 auto;margin-top:160px;text-align:center;gap:20px;padding:50px 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;background:rgba(183,36,229,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "GridProjects__Title"
-})(["font-size:2.5rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding-bottom:10px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
+})(["font-size:2.5rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding:0 40px 0 40px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
 const BodyText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
   displayName: "GridProjects__BodyText"
 })(["max-width:800px;font-size:1.2rem;line-height:1.6;color:#fff;margin:0 auto;padding:0 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;"]);
@@ -447,7 +455,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 })(["position:relative;display:flex;flex-direction:column;max-width:1200px;margin:0 auto;margin-top:160px;text-align:center;gap:20px;padding:50px 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;background:rgba(183,36,229,0.1);border-radius:20px;box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "GridSection__Title"
-})(["font-size:2.5rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding-bottom:10px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
+})(["font-size:2.5rem;font-weight:700;line-height:130%;text-transform:uppercase;color:#24B7A5;margin:0 auto;margin-bottom:20px;border-bottom:2px solid #B724E5;padding:0 40px 0 40px;background:rgba(36,183,165,0.1);border-radius:10px;transition:transform 0.6s ease;box-shadow:0px 0px 8px 2px rgba(180,35,227,0.5);&:hover{transform:rotateY(360deg);transition:transform 0.5s ease-in-out;}"]);
 const BodyText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
   displayName: "GridSection__BodyText"
 })(["max-width:800px;font-size:1.2rem;line-height:1.6;color:#fff;margin:0 auto;padding:0 20px;font-family:\"Rubik\",sans-serif;font-optical-sizing:auto;font-weight:400;font-style:normal;"]);
@@ -480,12 +488,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function MenuTooltip(props) {
-  const {
-    isOpen
-  } = props;
+function MenuTooltip({
+  isOpen
+}) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, {
-    isOpen: isOpen
+    style: {
+      opacity: isOpen ? 1 : 0,
+      visibility: isOpen ? 'visible' : 'hidden',
+      transform: isOpen ? 'skewY(0deg) rotate(0deg) translateY(0px)' : 'skewY(-5deg) rotate(5deg) translateY(-30px)'
+    }
   }, _data_menuData__WEBPACK_IMPORTED_MODULE_1__.tooltipData.map((item, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
     item: item,
     key: index
@@ -493,7 +504,7 @@ function MenuTooltip(props) {
 }
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "MenuTooltip__Wrapper"
-})(["background:rgba(15,14,71,0.3);box-shadow:0px 50px 100px rgba(0,0,0,0.25),inset 0px 0px 0px 0.5px rgba(255,255,255,0.2);backdrop-filter:blur(40px);border-radius:20px;padding:20px;position:absolute;top:60px;right:150px;opacity:", ";z-index:1;display:grid;gap:10px;grid-template-columns:150px;transition:0.3s ease-in-out;visibility:", ";transform:", ";"], props => props.isOpen ? 1 : 0, props => props.isOpen ? "visible" : "hidden", props => props.isOpen ? "skewY(0deg) rotate(0deg) translateY(0px)" : "skewY(-5deg) rotate(5deg) translateY(-30px)");
+})(["background:rgba(15,14,71,0.3);box-shadow:0px 50px 100px rgba(0,0,0,0.25),inset 0px 0px 0px 0.5px rgba(255,255,255,0.2);backdrop-filter:blur(40px);border-radius:20px;padding:20px;position:absolute;top:60px;right:150px;z-index:1;display:grid;gap:10px;grid-template-columns:150px;transition:0.3s ease-in-out;"]);
 
 /***/ }),
 
@@ -576,7 +587,7 @@ const IndexPage = () => {
     id: "my-background"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_cards_CourseCard__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(TextWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoWrap, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoCon, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LogoCon2, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Title, {
     className: "animate__animated animate__lightSpeedInRight illustration"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverableWord, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverableWord, null, "Automate Your Content Workflow")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_buttons_PurchaseButton__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SmallText, null, "\u201CFrom content creation to publication, Nex AI connects your company\u2019s data with the power of artificial intelligence for a seamless, automated process.\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverableWord, null, "Automate Your Content Workflow.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_buttons_PurchaseButton__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SmallText, null, "\u201CFrom content creation to publication, Nex AI connects your company\u2019s data with the power of artificial intelligence for a seamless, automated process.\u201D"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "LearnHow"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ContentWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_sections_ClickProjects__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "HowItWorks"
@@ -631,10 +642,10 @@ const LogoWrap = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.
 })(["display:flex;margin-left:-28px;@media (max-width:1920px){margin-left:0;margin-top:0;}@media (max-width:768px){margin-left:0;margin-top:50px;}@media (max-width:480px){margin-top:30px;}"]);
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].h1.withConfig({
   displayName: "pages__Title"
-})(["max-width:500px;font-size:30px;line-height:72px;margin-top:-110px;color:#ffffff;mix-blend-mode:normal;text-shadow:0px 20px 40px rgba(0,0,0,0.1);animation-duration:1.4s;text-align:center;@media (max-width:768px){font-size:40px;line-height:50px;text-align:center;}@media (max-width:480px){font-size:32px;line-height:40px;}"]);
+})(["max-width:500px;font-size:27px;font-weight:400;line-height:72px;margin-top:-38px;color:#ffffff;mix-blend-mode:normal;text-shadow:0px 20px 40px rgba(0,0,0,0.1);animation-duration:1.4s;text-align:center;@media (max-width:768px){font-size:36px;line-height:50px;text-align:center;}@media (max-width:480px){font-size:32px;line-height:40px;}"]);
 const HoverableWord = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].span.withConfig({
   displayName: "pages__HoverableWord"
-})(["display:inline-block;transition:transform 0.5s ease;background:rgba(183,36,229,0.1);box-shadow:0px 16px 32px rgba(183,36,229,0.2),0px 0px 8px 2px rgba(180,35,227,0.5);border-right:2px solid #B724E5;border-left:1px solid #24B7A5;&:hover{transform:translateY(-10px);}box-shadow:0px 0px 105px 45px rgba(251,255,138,0.03);border-radius:7px;"]);
+})(["display:inline-block;padding:0 4px;transition:transform 0.5s ease;background:rgba(183,36,229,0.1);border-radius:7px;border-right:5px solid #A922CB;border-top:1px solid #A922CB;border-left:1px solid #24B7A5;border-bottom:5px solid #24B7A5;box-shadow:0px 16px 23px rgba(36,183,165,0.3),0px 0px 24px 2px rgba(180,35,227,0.7),5px 5px 12px rgba(169,34,203,0.1),-5px -5px 10px rgba(36,183,165,0.4),0px 0px 105px 45px rgba(251,255,138,0.03);&:hover{transform:translateY(-10px);}"]);
 const SmallText = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p.withConfig({
   displayName: "pages__SmallText"
 })(["max-width:285px;font-size:13px;line-height:200%;color:#9EE0EC;animation:HeroAnimation 3s ease;@media (max-width:768px){text-align:center;}@media (max-width:480px){font-size:11px;}"]);

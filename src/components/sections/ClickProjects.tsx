@@ -11,6 +11,8 @@ export default function OverviewNexAI() {
         and integrate it with powerful AI tools like ChatGPT, Perplexity.ai, and platforms like Make.com to
         automate and optimize content across various channels.
       </BodyText>
+      {/* Image added here */}
+      <Image src="/path/to/your/image.jpg" alt="Nex AI Overview Image" />
       <FeaturesList>
         <li>Upload and organize content with ease.</li>
         <li>Automate content workflows with AI-driven tools.</li>
@@ -73,6 +75,15 @@ const BodyText = styled.p`
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+`;
+
+/* Styled Image component */
+const Image = styled.img`
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to image */
 `;
 
 const FeaturesList = styled.ul`

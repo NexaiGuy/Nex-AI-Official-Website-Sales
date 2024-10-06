@@ -121,7 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // Import the updated menuData
+ // Ensure this is the correct path
 
 
 
@@ -155,9 +155,9 @@ function Header() {
     src: _src_images_icons_logo3_png__WEBPACK_IMPORTED_MODULE_5__["default"],
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(MenuWrapper, {
-    count: _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.length,
+    $count: _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.length,
     ref: ref
-  }, _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.map((item, index) => item.link === "/account" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, " ", _data_menuData__WEBPACK_IMPORTED_MODULE_2__.menuData.map((item, index) => item.link === "/account" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
     item: item,
     key: index,
     onClick: event => handleClick(event)
@@ -182,7 +182,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.wi
 })(["position:sticky;top:20px;display:grid;grid-template-columns:44px auto;width:100%;justify-content:space-between;padding-left:19.4%;padding-right:19.22%;align-items:center;z-index:1000;@media (max-width:768px){top:30px;}@media (max-width:450px){top:20px;padding:0 20px;}"]);
 const MenuWrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "header__MenuWrapper"
-})(["display:grid;gap:30px;grid-template-columns:repeat(", ",auto);a{transition:transform 0.3s ease-in-out;}a:hover{transform:translateY(-10px);}@media (max-width:768px){> a{display:none;}grid-template-columns:auto;}"], props => props.count);
+})(["display:grid;gap:30px;grid-template-columns:repeat(", ",auto);a{transition:transform 0.3s ease-in-out;}a:hover{transform:translateY(-10px);}@media (max-width:768px){> a{display:none;}grid-template-columns:auto;}"], props => props.$count);
 const HamburgerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "header__HamburgerWrapper"
 })(["display:none;@media (max-width:768px){display:block;}"]);
@@ -359,12 +359,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function MenuTooltip(props) {
-  const {
-    isOpen
-  } = props;
+function MenuTooltip({
+  isOpen
+}) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Wrapper, {
-    isOpen: isOpen
+    style: {
+      opacity: isOpen ? 1 : 0,
+      visibility: isOpen ? 'visible' : 'hidden',
+      transform: isOpen ? 'skewY(0deg) rotate(0deg) translateY(0px)' : 'skewY(-5deg) rotate(5deg) translateY(-30px)'
+    }
   }, _data_menuData__WEBPACK_IMPORTED_MODULE_1__.tooltipData.map((item, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_MenuButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
     item: item,
     key: index
@@ -372,7 +375,7 @@ function MenuTooltip(props) {
 }
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "MenuTooltip__Wrapper"
-})(["background:rgba(15,14,71,0.3);box-shadow:0px 50px 100px rgba(0,0,0,0.25),inset 0px 0px 0px 0.5px rgba(255,255,255,0.2);backdrop-filter:blur(40px);border-radius:20px;padding:20px;position:absolute;top:60px;right:150px;opacity:", ";z-index:1;display:grid;gap:10px;grid-template-columns:150px;transition:0.3s ease-in-out;visibility:", ";transform:", ";"], props => props.isOpen ? 1 : 0, props => props.isOpen ? "visible" : "hidden", props => props.isOpen ? "skewY(0deg) rotate(0deg) translateY(0px)" : "skewY(-5deg) rotate(5deg) translateY(-30px)");
+})(["background:rgba(15,14,71,0.3);box-shadow:0px 50px 100px rgba(0,0,0,0.25),inset 0px 0px 0px 0.5px rgba(255,255,255,0.2);backdrop-filter:blur(40px);border-radius:20px;padding:20px;position:absolute;top:60px;right:150px;z-index:1;display:grid;gap:10px;grid-template-columns:150px;transition:0.3s ease-in-out;"]);
 
 /***/ }),
 

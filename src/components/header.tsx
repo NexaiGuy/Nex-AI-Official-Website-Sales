@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import styled from "styled-components";
-import { menuData } from "./data/menuData"; // Import the updated menuData
+import { menuData } from "./data/menuData"; // Ensure this is the correct path
 import MenuButton from "./buttons/MenuButton";
 import MenuTooltip from "./tooltip/MenuTooltip";
 
@@ -42,7 +42,7 @@ export default function Header() {
         <img src={logoIcon} alt="Logo" />
       </MyLink>
 
-      <MenuWrapper count={menuData.length} ref={ref}>
+      <MenuWrapper $count={menuData.length} ref={ref}> {/* Changed `count` to `$count` */}
         {menuData.map((item, index) =>
           item.link === "/account" ? (
             <MenuButton
@@ -93,7 +93,7 @@ const Wrapper = styled.div`
 const MenuWrapper = styled.div`
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(${props => props.count}, auto);
+  grid-template-columns: repeat(${props => props.$count}, auto);
 
   a {
     transition: transform 0.3s ease-in-out;
