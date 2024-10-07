@@ -159,7 +159,7 @@ const Wrapper = styled.div`
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  height: 7000px;
+  height: 7500px;
 `;
 
 const ContainerWrapper = styled.div`
