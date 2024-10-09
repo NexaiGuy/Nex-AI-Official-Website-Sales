@@ -10,7 +10,7 @@ export const menuData = [
   { title: "How It Works", icon: coursesIcon, link: "#HowItWorks" },
   { title: "Your Control", icon: tutorialsIcon, link: "#YourControl" },
   { title: "About", icon: pricingIcon, link: "#About" },
-  { title: "Contact", icon: profileIcon, link: "#Contact" },
+  { title: "Contact", icon: profileIcon, link: "/contact" },
   { title: "", icon: accountIcon, link: "/account" },
 ];
 
